@@ -1,0 +1,22 @@
+{
+  "name": "todontlist",
+  "version": "1.0.0",
+  "description": "anti to-do list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pargasparedes/ToDontList.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pargasparedes/ToDontList/issues"
+  },
+  "homepage": "https://github.com/pargasparedes/ToDontList#readme",
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  }
+}
