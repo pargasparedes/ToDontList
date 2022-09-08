@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>To Don't List</title>
+  
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" rel="stylesheet">
+  <!-- Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+  <!--Section: Inputs-->
+
+  <header>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h4 class="text-white">Collapsed content</h4>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+
+    
+    <div class="alert alert-warning center">
+      <b style="color: rgb(255, 255, 255) !important">Note</b>
+      - This is a work-in-progress project. (
+      <a class="alert-link" href="https://github.com/Deejerz88/Native-Solutions">
+        Check out the repository!
+      </a>
+      )
+    </div>
+  </header>
+  
+  <br />
+
+  <div class="container text-center">
+    <div class="jumbotron text-center">
+      <h1>To Don't List</h1>
+      <p>WIP</p>
+    </div>
+    <div class="text-centercol-sm-offset-3 col-sm-6 tex">
+        
+      <ul class="list-group ">
+      </ul>
+
+      <div class="form-group">
+        <input id="main-input" type="text" class="form-control" placeholder="Write up something">
+      </div>
+
+      <button type="button" class="btn btn-success" id="main-button">Submit</button>
+    </div>
+
+    <div class="modal fade" id="editModal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Edit</h4>
+          </div>
+
+          <div class="modal-body">
+            <input type="text" class="form-control" id="edit-input">
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="edit-button" data-dismiss="modal">Save changes</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+      
+   
+  </div>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+<footer class="footer">
+  <div style="margin-bottom: 0">
+
+    <h5 style="font-size: 18px">Created by the To Don't List Team</h5>
+    <p style="margin-bottom: 10px">
+      All rights belong to their respective owners
+    </p>
+  </div>
+</footer>
+
+</html>
