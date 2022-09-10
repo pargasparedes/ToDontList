@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // connecting static files in public folder
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'img')));
 
 // connection routes folder
 app.use('/routes', require('./controllers/index'));
