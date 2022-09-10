@@ -26,6 +26,9 @@ Here is my GitHub Profile: [pargasparedes](https://github.com/pargasparedes)
 
 ## Screenshots
 
+## Log In
 ![Log In Page](./img/login.png)
+## Register
 ![Register Page](./img/register.png)
+## Dashboard
 ![Dashboard](./img/dashboard.png)
