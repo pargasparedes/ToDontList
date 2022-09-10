@@ -1,44 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>To Don't List</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Don't List</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>To DON'T list</h1>
-    <form id="task-form">
-      <input type="text" id="task-input" placeholder="I shouldn't be doing this" />
-      <input type="submit" id="task-submit" value="Add Task">
-    </form>
-  </header>
-  <main>
-    <section class="task-list">
-      <h2>Don't Do It!</h2>
-      <div id="tasks">
 
-        <div class="task">
-          <div class="content">
-            <input 
-            type="text" 
-            class="text"
-            value="Don't take a nap"/>
-            readonly
-          </div>
-          <div class="actions">
-            <button class="edit">Edit</button>
-            <button class="delete">Delete</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <script src="index.js"></script>
+    <header>
+        <h1>To Don't List</h1>
+        <form id="new-task-form">
+            <input type="text" id="new-task-input" placeholder="I shouldn't be doing this!" />
+            <input type="submit" id="new-task-submit" value="Add task" />
+        </form>
+    </header>
+
+    <main>
+
+        <section class="task-list">
+            <h2>I should not:</h2>
+
+            <div id="tasks">
+
+                <div class="task">
+                    <div class="content">
+                        <input type="text" class="text" value="Take a nap" readonLy />
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+
+                </div>
+                <div class="task">
+                    <div class="content">
+                        <input type="text" class="text" value="Watch TV" readonLy />
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+
+                </div>
+                <div class="task">
+                    <div class="content">
+                        <input type="text" class="text" value="Cry :(" readonLy />
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+
+                </div>
+                <div class="task">
+                    <div class="content">
+                        <input 
+                            type="text"
+                            class="text"
+                            value="Play video games"
+                            readonLy
+                        />
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
 </body>
 
 </html>
