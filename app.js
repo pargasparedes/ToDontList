@@ -17,6 +17,9 @@ sequelize.authenticate()
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
+// Body parser
+app.use(bodyParser.urlencoded({ extended: false }));
+
 // connecting static files in public folder
 app.use(express.static(path.join(__dirname, 'public')));
 

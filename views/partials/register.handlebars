@@ -1,22 +1,22 @@
- <form class="box">
+ <form action="/routes/api/register/" method="POST" class="box">
             <div class="field">
               <label class="label">Email</label>
               <div class="control">
-                <input class="input" type="email" placeholder="e.g. alex@example.com">
+                <input class="input" name="email" type="email" placeholder="e.g. alex@example.com" required>
               </div>
             </div>
 
             <div class="field">
-                <label class="label">User Name</label>
+                <label class="label">Name</label>
                 <div class="control">
-                  <input class="input" type="userName" placeholder="********">
+                  <input class="input" name="name" type="userName" placeholder="********" required>
                 </div>
               </div>
           
             <div class="field">
               <label class="label">Password</label>
               <div class="control">
-                <input class="input" type="password" placeholder="********">
+                <input class="input" name="password" type="password" placeholder="********" required>
               </div>
             </div>
 
@@ -26,6 +26,7 @@
                   <input class="input" type="password" placeholder="********">
                 </div>
               </div>
-            <a href="" class="button is-primary is-outlined">Sign Up</a>
+            <input type="submit" value="Submit" class="button is-primary is-outlined" />
+            {{!-- <a href="/register" class="button is-primary is-outlined" type="submit">Sign Up</a> --}}
             <a href="./login" class="button is-primary is-outlined">Sign in</a>
           </form>
