@@ -18,10 +18,10 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 // connecting static files in public folder
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // connection routes folder
-app.use('/routes', require('./routes/index'));
+app.use('/routes', require('./controllers/index'));
 
 // main page/renders main page
 app.get('/', (req, res) => {
