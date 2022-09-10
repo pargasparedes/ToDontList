@@ -19,7 +19,7 @@ router.post('/', (req, res) => {
         email,
         password
     })
-    .then(newUser => res.redirect('/login'))
+    .then(newUser => res.redirect('/routes/api/login'))
     .catch(err => console.log(err));
 })
 
