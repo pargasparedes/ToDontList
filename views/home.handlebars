@@ -1,0 +1,44 @@
+<section class="section">
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="">
+      <img src="/logo.png" width="200" height="50">
+    </a>
+ <a class="navbar-item" href="./dash">
+        Dashboard
+      </a>
+  </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a href="./login" class="button is-primary">
+            <strong>Log In</strong>
+          </a>
+          <a href="./register" class="button is-primary">
+            <strong>Register</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</section>
+
+{{!-- {{#if haveUser}}
+{{> login}}
+{{else}}
+{{> register}}
+{{/if}} --}}
+
+{{#if showDash}}
+{{>dash}}
+{{else}}
+
+{{#if haveUser}}
+{{> login}}
+{{else}}
+{{> register}}
+{{/if}}
+
+{{/if}}

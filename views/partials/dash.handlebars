@@ -1,39 +1,16 @@
+<section class="section">
 <body>
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="/logo.png" width="200" height="50">
-    </a>
-
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a href="./login" class="button is-primary">
-            <strong>Log Out</strong>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
 
     <header>
         <h1>To Don't List</h1>
-        <form id="new-task-form">
-            <input type="text" id="new-task-input" placeholder="I shouldn't be doing this!" />
-            <input type="submit" id="new-task-submit" value="Add task" />
-        </form>
     </header>
 
     <main>
+
+        <form action="/routes/api/dash" method="POST" id="new-task-form">
+            <input name="info" type="text" id="new-task-input" placeholder="I shouldn't be doing this!" />
+            <input type="submit" id="new-task-submit" value="Add task" />
+        </form>
 
         <section class="task-list">
             <h2>I should not:</h2>
@@ -89,5 +66,6 @@
             </div>
         </section>
     </main>
-    <script src="/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
+</section>

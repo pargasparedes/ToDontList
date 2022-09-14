@@ -2,12 +2,15 @@ const express = require('express');
 const router = express.Router();
 const sequelize = require('../../config/connection');
 const User = require('../../models/User');
+const Note = require('../../models/Note')
 
 // get users json
 router.get('/', async (req, res) => {
     try {
         const userInfo = await User.findAll();
-        res.status(200).json(userInfo);
+        const noteInfo = await Note.findAll();
+        // res.status(200).json(userInfo);
+        res.status(200).json(noteInfo);
       } catch (err) {
         res.status(500).json(err);
       }

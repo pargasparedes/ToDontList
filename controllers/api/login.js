@@ -5,7 +5,7 @@ const User = require('../../models/User');
 const itsUser = true;
 
 router.get('/', (req, res) => {
-    res.render('main', {layout: 'index', haveUser: itsUser});
+    res.render('home', {layout: 'index', haveUser: itsUser});
 });
 
 router.post('/', async (req, res) => {

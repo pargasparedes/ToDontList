@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     const list_el = document.querySelector("#tasks");
 // stops from page refresh when submitting
     form.addEventListener('submit', (e) =>{
-        e.preventDefault();
+        // e.preventDefault();
 
         const task = input.value;
     // alerts if no task is entered but add task is selected

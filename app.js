@@ -29,7 +29,7 @@ app.use('/routes', require('./controllers/index'));
 
 // main page/renders main page
 app.get('/', (req, res) => {
-    res.redirect('./routes/api/login');
+    res.render('home', {layout: 'index'});
 });
 
 sequelize.sync({ force: false }).then(() => {

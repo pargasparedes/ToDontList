@@ -1,7 +1,7 @@
 :root {
     --dark: #48c78e;
     --darker: #385275;
-    --darkest: #10053a;
+    --darkest: #5C7330;
     --gray: #dfe4ee;
     --light: #EEE;
     --pink: #EC4899;
@@ -18,8 +18,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: var(--dark);
+    background-image: url("/main-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #FFF;
+    overflow: hidden;
 }
 
 header {
@@ -149,4 +152,8 @@ main {
 
 .task .actions .delete {
     color: red;
+}
+
+.is-primary {
+    background-color: #C0D59A;
 }
