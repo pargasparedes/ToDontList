@@ -24,6 +24,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'img')));
 
+// middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 // connection routes folder
 app.use('/routes', require('./controllers/index'));
 

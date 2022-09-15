@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     let { info } = req.body;
-    res.status(200);
+    // res.status(200).json({ message: "dude chill"});
 
     //insert into table
     Note.create({
