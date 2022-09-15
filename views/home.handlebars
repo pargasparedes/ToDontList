@@ -12,12 +12,11 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a href="./login" class="button is-primary">
-            <strong>Log In</strong>
-          </a>
-          <a href="./register" class="button is-primary">
-            <strong>Register</strong>
-          </a>
+            {{#if showDash}}
+            {{> buttonNonUser}}
+            {{else}}
+            {{> buttonUser}}
+            {{/if}}
         </div>
       </div>
     </div>
@@ -25,11 +24,6 @@
 </nav>
 </section>
 
-{{!-- {{#if haveUser}}
-{{> login}}
-{{else}}
-{{> register}}
-{{/if}} --}}
 
 {{#if showDash}}
 {{>dash}}
