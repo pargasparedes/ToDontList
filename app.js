@@ -33,7 +33,7 @@ app.use('/routes', require('./controllers/index'));
 
 // main page/renders main page
 app.get('/', (req, res) => {
-    res.render('home', {layout: 'index'});
+    res.redirect('./routes/api/login')
 });
 
 sequelize.sync({ force: false }).then(() => {
